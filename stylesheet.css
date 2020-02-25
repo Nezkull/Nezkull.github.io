@@ -1,0 +1,397 @@
+/* Re-organize style sets, (alphabetical order/ order of importance)? base HTML -> Classes then Classes w/ extensions -> IDs then IDs w/ extensions -> Animations -> Keyframes -> Webkits */
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: #0a0a0a;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+h1, h2, p{
+    margin: 0;
+    padding: 0;
+}
+
+#grid{
+    display:grid;
+    max-width:100vw;
+    width: 100%;
+    overflow: auto;
+    padding-right:15px;
+    grid-template-columns: 1fr 70% 1fr;
+}
+
+#title{
+    grid-column: 1/ span 3;
+    width:100vw;
+    height:100vh;
+    background-color: #0a0a0a;
+    /*background-image: url("media/backgroundImage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#title div{
+    width:100vw;
+}
+
+#title h1{
+    color:#080808;
+    font-size: 8rem;
+/*    text-shadow: 3px 3px #50c878;*/
+    text-shadow: 0 0 20px #080808, 0 0 30px #50c878, 0 0 40px #50c878, 0 0 50px #50c878, 0 0 60px #50c878, 0 0 70px #50c878;
+}
+
+#title h2{
+    color:#080808;
+    font-size: 3rem;
+/*    text-shadow: 1.5px 1.5px #50c878;*/
+    text-shadow: 0 0 20px #080808, 0 0 30px #50c878, 0 0 40px #50c878, 0 0 50px #50c878, 0 0 60px #50c878;
+}
+
+#title div a{
+    text-decoration: none;
+}
+
+#navbar{
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+}
+
+#links{
+    float:right;
+    transform: rotate(-90deg);
+    transform-origin: right bottom;
+    text-align:right;
+}
+
+#links a{
+    margin: 0px 8px;
+    text-decoration: none;
+    color: #50c878;
+    font-size: 19px;
+}
+
+#links a:hover{
+    font-weight: bold;
+    color: #309966;
+}
+
+/*Scroll bar!*/
+
+/* width */
+::-webkit-scrollbar{
+    width: 6px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track{
+    background: #0a0a0a; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb{
+    background: #50c878; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover{
+    background: #309966; 
+}
+
+.work{
+    grid-column: 2/span 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 2%;
+}
+
+.big{
+    grid-column: span 2;
+}
+
+.small{
+    grid-column: span 1;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.work h2{
+    color: #50c878;
+}
+
+.work div img{
+    border-radius:20px;
+    width: 98%;
+    height: 30vh;
+    box-shadow: 0 0 5px #080808, 0 0 20px #50c878;
+}
+
+.work div img:hover{
+    width:100%;
+    height: 31vh;
+}
+
+hr.greenvert{
+    border: 1px solid #50c878;
+}
+
+#about{
+    grid-column: 2/span 1;
+    margin: 2vh 0vh;
+}
+
+#about h2{
+    color: #50c878;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#about p{
+    width: 70%;
+    color: white;
+    font-size: 2rem;
+    margin: 2vh auto;
+}
+
+#contact{
+    grid-column: 2/span 1;
+    margin: 2vh 0vh;
+}
+
+#contact p{
+    width: 70%;
+    color: white;
+    font-size: 20px;
+    margin: 2vh auto;
+}
+
+.important{
+    color:#50c878;
+}
+
+/* Modals!*/
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+  
+.caption{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: left;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.work div div img{
+    border-radius: 15px;
+    width: 100%;
+    height: 50vh;
+    box-shadow: none;
+}
+
+.work div div img:hover{
+    width: 100%;
+    height: 50vh;
+}
+
+/*Animations!*/
+.modal-content, .caption{  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+    
+/*Close Buttons!*/
+.close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #50c878;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover, .close:focus{
+    color: #309966;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8{
+    display: none;
+/*    box-shadow: none;*/
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    width: auto;
+    margin-top: -32px;
+    padding: 16px;
+    color: #50c878;
+    font-weight: bold;
+    font-size: 38px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev:hover, .next:hover{
+    color: #309966;
+}
+
+.next{
+    right: 20%;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev{
+    left: 20%;
+}
+
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/*
+    height/width should be changed for better viewing results
+    maybe have a class for landscape or portrait video orientation
+    setup styles for a video of each class for better viewing results
+*/
+video{
+    width: 420px;
+    height: 340px;
+    outline: none;
+}
+
+/* Custom video player controls */
+.videoControls{
+    width: 480px;
+    height: 30px;
+/*    outline-color: #50c878;*/
+    margin: auto;
+/*  change the alpha value of the background or just get rid of it entirely  */
+/*    background-color: #0a0a0a;*/
+/*    padding-right: 40px*/
+    text-align: center;
+}
+
+.playPause{
+    background-color: #50c878;
+    border-color: #309966;
+    border-radius: 5px;
+    outline: none;
+}
+
+.playPause:hover{
+    background-color: #309966;
+    border-color: #50c878;
+}
+
+.mute{
+    background-color: #50c878;
+    border-color: #309966;
+    border-radius: 5px;
+    outline: none;
+}
+
+.mute:hover{
+    background-color: #309966;
+    border-color: #50c878;
+}
+
+.fullScreen{
+    background-color: #50c878;
+    border-radius: 5px;
+    border-color: #309966;
+    outline: none;
+}
+
+.fullScreen:hover{
+    background-color: #309966;
+    border-color: #50c878;
+}
+
+.volumeSlider{
+/*    move this down a bit*/
+}
+
+.progressBar{
+/*    move this down a bit*/
+}
+
+@-webkit-keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@-webkit-keyframes zoom{
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+  
+@keyframes zoom{
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
