@@ -1,77 +1,41 @@
 {
     "projects": [
         {
-            "projectName": "Picture the Impossible",
-            "description": "<span class='important'>Picture the Impossible</span> is a mobile version of a project that was run by mmbers of RIT's fuclty and students 10 years ago. My responsibilities for this project are as Development Lead for Augmented Reality activities and Geo-Location. My specific duties as development lead are to communicate with the Design teams on aspects of AR functionality to aid in their work, I also communicate with the UI/UX lead on what interface requirements we need for AR activities, and I also talk with the administrative design leads on activity specs.",
+            "projectName": "Mandelbrot Set",
+            "description": "The <span class='important'>Mandelbrot Set</span> is fractal created by Benoit Mandelbrot. I wrote this project in <span class='important'>C++</span> and made use of <span class='important'>SFML</span> to generate the video screen that portrays the Mandelbrot set. Over quarantine I began reading up on <span class='important'>fractals</span> after seeing several images online and wanted to practice my coding skills as well. The Mandelbrot set is the most interesting fractal to me, however I do plan to create others in my spare time.",
             "links": [
-                "media/projects/sample1.jpg",
-                "media/projects/sample2.jpg",
-                "media/projects/sample1.jpg"
-            ]
+                "media/projects/Mandelbrot_Set.mp4"
+            ],
+            "thumbNail": "media/projects/Mandelbrot_Set.png"
         },
         {
             "projectName": "FPS: Finite Platform Shooter",
             "description": "<span class='important'>FPS: Finite Platform Shooter</span> is a first person platformer. This game was a team effort between my friend and I. It was made over a 48 hour period during <span class='important'>HeroJam 2017</span>. It is written in C# and built in Unity.",
             "links": [
                 "media/projects/FPS_HeroJam2017.PNG",
-                "media/projects/FPS_HeroJam2017.PNG",
-                "media/projects/FPS_HeroJam2017.PNG"
-            ]
+                "media/projects/FPS_Finite_Platformer_Shooter.mp4"
+            ],
+            "thumbNail": "media/projects/FPS_HeroJam2017.PNG"
         },
         {
             "projectName": "Trealthy",
             "description": "<span class='important'>Trealthy</span> is a first person stealth adventure. The player is tasked with find all of the pieces of the Empress tarot card, which symbolizes fertility and new growth, in order to fight back against the dark forces of pollution. The enemies are clouds of toxic pollution hunting the player through a forest. This game makes use of an AI system for the enemies, shaders, and custom models. It was made over a 48 hour period during <span class='important'>Roc GameJam 2019</span>. It was scripted in C# with shaders being written in HLSL, it was built in Unity.",
             "links": [
                 "media/projects/Trealthy_GameJam2019.PNG",
-                "media/projects/Trealthy_GameJam2019.PNG",
-                "media/projects/Trealthy_GameJam2019.PNG"
-            ]
-        },
-        {
-            "projectName": "Temp Project Name 4",
-            "description": "Lorem ipsum dolores.",
-            "links": [
-                "media/projects/sample2.jpg",
-                "media/projects/sample1.jpg",
-                "media/projects/sample2.jpg"
-            ]
-        },
-        {
-            "projectName": "Temp Project Name 5",
-            "description": "Lorem ipsum dolores.",
-            "links": [
-                "media/projects/sample1.jpg",
-                "media/projects/sample2.jpg",
-                "media/projects/sample1.jpg"
-            ]
+                "media/projects/Trealthy.mp4"
+            ],
+            "thumbNail": "media/projects/Trealthy_GameJam2019.PNG"
         },
         {
             "projectName": "What Lies Beneath",
             "description": "<span class='important'>What Lies Beneath</span> is a geo-location, augmented reality, mobile application designed for Android devices. It was the result of a semester long research studio while studying abroad in Dubrovnik, Croatia, which hosts one of <span class='important'>RIT's</span> satelite campuses. The goal of the app was to attempt to alleviate the problem of massive crowds of tourists clogging the streets of the historic Old Town in an interesting and engaging way. The app featured multiple quests, designed and built around the Croatian and Dubrovnik history and folklore. It was written in C# and built in Unity. World localization and representation was accomplished using the <span class='important'>Mapbox API</span> while a Unity plug-in, <span class='important'>Vuforia</span>, was used to build the AR functionality.",
             "links": [
-                "media/projects/sample2.jpg",
+                "media/projects/What_Lies_Beneath_Overview.PNG",
                 "media/projects/What_Lies_Beneath_AR_Screen_Demo.mp4",
                 "media/projects/What_Lies_Beneath_Reboot_Video_V2.mp4"
-            ]
-        },
-        {
-            "projectName": "Primitives",
-            "description": "This project was an assignment from <span class='important'>Data Structures and Algorithms II</span> in which everyone was taksed with generating 3D geometric primitives. The algorithms for each primitive were individually coded and were required to produce the shapes as sample images and the assingment documentation declared.",
-            "links": [
-                "media/projects/sample2.jpg",
-                "media/projects/sample1.jpg"
-            ]
-        },
-        {
-            "projectName": "Temp Project Name 8",
-            "description": "Lorem ipsum dolores.",
-            "links": [
-                "media/projects/sample1.jpg",
-                "media/projects/sample2.jpg",
-                "media/projects/sample1.jpg",
-                "media/projects/sample2.jpg",
-                "media/projects/sample1.jpg"
-            ]
+            ],
+            "thumbNail": "media/projects/What_Lies_Beneath_Logo.PNG"
+            
         }
     ],
     "repeatedClasses": [
@@ -100,6 +64,17 @@
         1
     ],
     "aboutMe": [
-        "<p>My name is Nick Marano. I am a <span class='important'>Game Developer</span> and <span class='important'>3D Artist</span> going into my last semester for my Game Design and Development degree this spring at the <span class='important'>Rochester Institute of Technology</span>. I come from outside of <span class='important'>Philadelphia, PA</span>. I like to spend my free time playing games, solo or multi, and working on side projects and/or 3D models. Before going away to college, I would volunteer time at and enter cacti into the <span class='important'>Philadelphia Flower Show.</span></p>"
+        "<p>My name is Nick Marano. I am a <span class='important'>Web Developer</span> and <span class='important'>Game Designer</span> graduate of <span class='important'>Rochester Institute of Technology</span>. I come from outside of <span class='important'>Philadelphia, PA</span>. I have worked on several different projects for a couple different companies/ organizations and really enjoy working in a professional setting of web design. I like to spend my free time playing games, solo or multi, and working on side projects and/or 3D models. Before going away to college, I would volunteer time at and enter cacti into the <span class='important'>Philadelphia Flower Show.</span></p>"
+    ],
+    "bodyIds": [
+        "navbar",
+        "grid"
+    ],
+    "navbarLinks": [
+        "links",
+        "home",
+        "work",
+        "about",
+        "contact"
     ]
 }
